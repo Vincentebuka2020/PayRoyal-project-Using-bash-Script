@@ -2,11 +2,11 @@
 
 1. **Creation of a Virtual Machine in AWS** 
 
-![image.png](attachment:654064ed-9e89-4690-bbbf-fd473bb09baa:image.png)
+![alt text](images/Vm.png)
 
 **Login to the server using mobaXterm through ssh-key**
 
-![image.png](attachment:92bfe079-e8c9-4ffb-b511-cc3e31de0e72:image.png)
+![alt text](images/ssh.png)
 
 **carefully write out the script**
 
@@ -99,23 +99,22 @@ create the script file using `nano [deploy-data@payroyal.sh](mailto:deploy-data@
 
 inspect the file using `cat [deploy-data@payroyal.sh](mailto:deploy-data@payroyal.sh)` 
 
-![image.png](attachment:ea43f8f0-fd6d-4637-9318-2bfe1d5d0482:image.png)
 
 Then deploy using `sh [deploy-data@payroyal.sh](mailto:deploy-data@payroyal.sh)` 
 
 confirm the Containers are running 
 
-![image.png](attachment:562fbccb-01a9-436a-a023-7d171e3b7b98:image.png)
+images/containers.png
 
 **Connect to Domain using Advance DNS Settings**
 
-![image.png](attachment:b2979829-fecc-441e-90e1-450a805374d2:image.png)
+![alt text](image.png)
 
  
 
 **Confirm it has been Propagated using [dnschecker.org](http://dnschecker.org)** 
 
-![image.png](attachment:a8e3ed80-1d9b-4b61-bdbf-6a5b343413ec:image.png)
+![alt text](image-1.png)
 
 **Access WordPress in your browser**
 
@@ -123,10 +122,8 @@ http://YOUR_IP:8081
 
 [http://data.payroyal.online:8081](http://data.payroyal.online:8081/wp-admin/)
 
-![image.png](attachment:10a7d09d-25cd-4460-bbfa-6c326d62539e:image.png)
-
-![image.png](attachment:c09c796e-0a26-48e0-82ea-887edf78c051:image.png)
+![alt text](images/livewebsite.png)
 
 **Then Continue with the setups**
 
-![image.png](attachment:a67acff1-7b7b-4e06-b62f-6e9ef3d618b4:image.png)
+![alt text](image-2.png)
