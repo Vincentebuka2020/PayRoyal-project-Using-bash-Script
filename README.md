@@ -108,13 +108,12 @@ images/containers.png
 
 **Connect to Domain using Advance DNS Settings**
 
-![alt text](image.png)
+![alt text](<images/dns record.png>)
 
  
-
 **Confirm it has been Propagated using [dnschecker.org](http://dnschecker.org)** 
 
-![alt text](image-1.png)
+![alt text](images/dnschecker.png)
 
 **Access WordPress in your browser**
 
@@ -126,4 +125,4 @@ http://YOUR_IP:8081
 
 **Then Continue with the setups**
 
-![alt text](image-2.png)
+![alt text](images/setuppage.png)
