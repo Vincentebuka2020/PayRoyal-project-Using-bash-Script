@@ -1,6 +1,6 @@
 ### Deploying a Dynamic Sub-domain website for a Client - PayRoyal Using bash Scripting
 
-1. ##Creation of a Virtual Machine in AWS** 
+## Creation of a Virtual Machine in AWS** 
 
 ![alt text](images/Vm.png)
 
@@ -111,14 +111,14 @@ sudo docker-compose up -d
 ## Create the script file using 
 
 ```
-nano [deploy-data@payroyal.sh](mailto:deploy-data@payroyal.sh)` (name of file)
+nano deploy-data@payroyal.sh
 
 ```
 
 ## Inspect the file using 
 
 ```
-cat [deploy-data@payroyal.sh](mailto:deploy-data@payroyal.sh)` 
+cat deploy-data@payroyal.sh  
 ```
 
 ## Then deploy using 
@@ -131,7 +131,8 @@ sh deploy-data@payroyal.sh
 
 Confirm the Containers are running 
 
-images/containers.png
+![2025-05-08 (9)](https://github.com/user-attachments/assets/a9c15801-4d41-45a6-abb1-57dc962bb148)
+
 
 ## Connect to Domain using Advance DNS Settings*
 
