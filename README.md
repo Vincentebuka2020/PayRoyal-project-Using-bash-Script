@@ -1,4 +1,4 @@
-### Deploying a Dynamic Sub-domain website for a Client - PayRoyal Using bash Scripting
+### How i Deployed a Dynamic Sub-domain website for a Client - PayRoyal Using bash Scripting
 
 ## Creation of a Virtual Machine in AWS** 
 
@@ -8,23 +8,24 @@
 
 ![alt text](images/ssh.png)
 
-
-## Update system and install Docker & Docker Compose
+##Carefully Write out the Bash Script and Create the script file using 
 
 ```
+nano deploy-data@payroyal.sh
+
+```
+
+```
+#!/bin/bash
+
+# Update system and install Docker & Docker Compose
 sudo apt update -y 
 sudo apt install docker.io docker-compose -y
 
-```
-
-## Create directories for MySQL configuration
-```
+# Create directories for MySQL configuration
 mkdir -p mysql/{data,initdb,config}
-```
 
-## Create SQL initialization script
-
-```
+# Create SQL initialization script
 cat <<EOF > mysql/initdb/grant-all.sql
 CREATE USER 'vincent2020'@'%' IDENTIFIED BY 'vincent@2020';
 GRANT ALL PRIVILEGES ON *.* TO 'vincent2020'@'%' WITH GRANT OPTION;
@@ -33,11 +34,8 @@ GRANT ALL PRIVILEGES ON *.* TO 'wordpress'@'%' WITH GRANT OPTION;
 CREATE DATABASE royalpaydb;
 FLUSH PRIVILEGES;
 EOF
-```
 
-## Create MySQL config file
-
-```
+# Create MySQL config file
 cat <<EOF > mysql/config/mysqld.cnf
 [mysqld]
 user = mysql
@@ -52,11 +50,8 @@ general_log = 1
 log_error = /var/log/mysql/error.log
 max_binlog_size = 100M
 EOF
-```
 
-## Create docker-compose file
-
-```
+# Create docker-compose file
 cat <<EOF > mysql/docker-compose.yaml
 version: '3.8'
 services:
@@ -98,22 +93,13 @@ networks:
   wp-net:
     driver: bridge
 EOF
-```
 
-## Move into the mysql directory to run docker-compose
-
-```
+# Move into the mysql directory to run docker-compose
 cd mysql
 sudo docker-compose up -d
 
 ```
 
-## Create the script file using 
-
-```
-nano deploy-data@payroyal.sh
-
-```
 
 ## Inspect the file using 
 
@@ -129,7 +115,7 @@ sh deploy-data@payroyal.sh
 ```
  
 
-Confirm the Containers are running 
+## Confirm the Containers are running 
 
 ![2025-05-08 (9)](https://github.com/user-attachments/assets/a9c15801-4d41-45a6-abb1-57dc962bb148)
 
