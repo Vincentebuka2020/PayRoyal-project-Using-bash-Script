@@ -1,4 +1,4 @@
-### How i Deployed a Dynamic Sub-domain website for a Client - PayRoyal Using bash Scripting
+#### How i Deployed a Dynamic Sub-domain website for a Client - PayRoyal Using bash Scripting
 
 ## Creation of a Virtual Machine in AWS** 
 
@@ -8,7 +8,7 @@
 
 ![alt text](images/ssh.png)
 
-##Carefully Write out the Bash Script and Create the script file using 
+## Carefully Write out the Bash Script and Create the script file using 
 
 ```
 nano deploy-data@payroyal.sh
